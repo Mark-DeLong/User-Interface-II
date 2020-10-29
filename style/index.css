@@ -54,7 +54,7 @@ table {
 }
 
 header {
-    height: 20vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -87,34 +87,35 @@ a:link {
     text-decoration: none;
 }
 
-.bigImage {
-    height: 30vh;
+.bigImage img{
+    height: 40vh;
     display: flex;
     width: 100%;
-    background-image: url"../assets/1.jpg";
+    margin-top: 5%;
+    margin-bottom: 5%;
+    justify-content: center;
 }
 
 .portfolio {
-    height: 40vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .description {
     display: flex;
     align-self: center;
+    width: 19%;
+    margin: 3%;
 }
 
 .images {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: row;
-    flex-wrap: wrap;
-    
+    width: 19%;
 }
 
 footer {
-    height: 10 vh;
     display: flex;
     justify-content: space-around;
 }
