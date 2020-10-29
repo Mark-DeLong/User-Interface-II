@@ -48,8 +48,6 @@ table {
 
 * {
     max-width: 100%;
-    box-sizing: border-box;
-    border: 1px solid black;
     font-size: 62.5%;
 }
 
@@ -76,11 +74,18 @@ header {
 
 a {
     color: black;
+    border: 1px solid black;
+    transition: transform 0.1s;
+    margin: 2px;
+    border-radius: 10px;
+    transition: transform 0.2s;
 }
 
 a:hover {
     color: white;
     background-color: black;
+    transition: transform 0.85s;
+    transform: scale(1.05);
 }
 
 a:link {
@@ -113,9 +118,21 @@ a:link {
     justify-content: space-between;
     flex-direction: row;
     width: 19%;
+    transition: transform 0.2s;
+}
+
+.images img:hover {
+    transition: transform 0.85s;
+    transform: scale(1.05);
 }
 
 footer {
+    height: 20vh;
     display: flex;
     justify-content: space-around;
+}
+
+footer div {
+    display: flex;
+    align-self: center;
 }
