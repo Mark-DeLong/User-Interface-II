@@ -48,6 +48,7 @@ table {
 
 * {
     max-width: 100%;
+    box-sizing: border-box;
     font-size: 62.5%;
     font-family: 'Noto Serif', serif;
 }
@@ -137,4 +138,103 @@ footer {
 footer div {
     display: flex;
     align-self: center;
+}
+
+/*responsive design for mobile*/
+
+@media(max-width:800px){
+
+    * {
+        border: 1px solid black;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        height: auto;
+        width: 90%;
+        margin-top: 5%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .name {
+        font-size: 3.2rem;
+    }
+
+    .intro {
+        font-size: 2.8rem;
+    }
+    
+    .navigation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation, .blurb {
+        font-size: 1.2rem;
+    }
+    
+    .bigImage, .bigImage img{
+        height: auto;
+        display: flex;
+        width: 90%;
+    }
+    
+    .bigImage {
+        display: flex;
+        width: 90%;
+        justify-content: center;
+    }
+
+    .bigImage img {
+        width: 100%;
+    }
+
+    .portfolio {
+        display: flex;
+        width: 90%;
+        height: auto;
+        margin-bottom: 5%;
+        flex-direction: column;
+        flex-flow: wrap;
+    }
+
+    .portfolio img {
+        width: 50%;
+        padding: 1%;
+        margin-bottom: 5%;
+        align-content: center;
+    }
+ 
+    .description {
+        display: flex;
+        align-self: center;
+        width: 90%;
+        margin: 3%;
+    }
+    
+    .images {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 40%;
+        transition: transform 0.2s;
+    }
+    
+   
+    footer {
+        height: auto;
+        width: 90%;
+        display: flex;
+    }
+}
+
+@media(max-width:500px){
+
 }
