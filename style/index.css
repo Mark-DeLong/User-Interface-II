@@ -109,22 +109,16 @@ a:link {
     justify-content: space-between;
 }
 
-.description {
-    display: flex;
-    align-self: center;
-    width: 19%;
-    margin: 3%;
-}
-
-.images {
+.portfolio img {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     width: 19%;
+    padding: 1%;
     transition: transform 0.2s;
 }
 
-.images img:hover {
+.portfolio img:hover {
     transition: transform 0.85s;
     transform: scale(1.05);
 }
@@ -143,10 +137,6 @@ footer div {
 /*responsive design for mobile*/
 
 @media(max-width:800px){
-
-    * {
-        border: 1px solid black;
-    }
 
     body {
         display: flex;
@@ -210,31 +200,33 @@ footer div {
         margin-bottom: 5%;
         align-content: center;
     }
- 
-    .description {
-        display: flex;
-        align-self: center;
-        width: 90%;
-        margin: 3%;
-    }
-    
-    .images {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 40%;
-        transition: transform 0.2s;
-    }
-    
-   
-    footer {
-        height: auto;
-        width: 90%;
-        display: flex;
-    }
 }
 
 @media(max-width:500px){
 
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        height: auto;
+        width: 90%;
+        margin-top: 5%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .name {
+        font-size: 2.8rem;
+    }
+
+    .intro {
+        font-size: 2.2rem;
+    }
+    
+    .navigation, .blurb {
+        font-size: 1rem;
+    }
 }
